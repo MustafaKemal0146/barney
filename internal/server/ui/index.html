@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barney — Kurulum</title>
+<style>
+:root{--bg:#0B1026;--surface:#121A3A;--line:#1F2A5C;--primary:#5B7CFF;--gold:#E8C547;--text:#E6EAF7;--mut:#8D97C4;--ok:#4ADE80;--bad:#FF6B7A;--warn:#F5B94A}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 60px}
+h1{font-size:26px;margin:0}h1 b{color:var(--gold)}.tag{color:var(--mut);margin:2px 0 22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.card h2{font-size:15px;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+.n{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--line);font-size:13px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--bad);margin-left:auto}.dot.ok{background:var(--ok)}.dot.warn{background:var(--warn)}
+.card p{margin:6px 0;color:var(--mut)}ol{margin:8px 0 4px;padding-left:22px}li{margin:4px 0}
+code,.path{background:#0B1026;border:1px solid var(--line);border-radius:8px;padding:2px 7px;font:13px ui-monospace,monospace;color:var(--text)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}.path{flex:1;min-width:200px;padding:8px 10px;word-break:break-all}
+button,a.btn{background:var(--primary);color:#fff;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;font:inherit;text-decoration:none;display:inline-block}
+button.alt{background:transparent;border:1px solid var(--line);color:var(--text)}button.stop{background:var(--bad)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin-top:6px}.kv span:nth-child(odd){color:var(--mut)}
+.ok-t{color:var(--ok)}.bad-t{color:var(--bad)}.warn-t{color:var(--warn)}
+select,input{background:#0B1026;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit}
+.foot{color:var(--mut);font-size:13px;margin-top:20px}
+</style></head><body><div class="wrap">
+<h1>Barney</h1>
+<div class="tag">Kurulum ve durum — her şey bu bilgisayarda kalır.</div>
+
+<div class="card"><h2><span class="n">1</span>Sunucu <span class="dot ok" id="d1"></span></h2>
+<p>Barney sunucusu çalışıyor. Bu sayfa kendini 2 saniyede bir yeniler.</p></div>
+
+<div class="card" id="c2"><h2><span class="n">2</span>Chrome uzantısı <span class="dot" id="d2"></span></h2>
+<div id="ext-ok" hidden><p class="ok-t">Uzantı bağlı ✓</p></div>
+<div id="ext-todo">
+<p>Uzantı henüz bağlanmadı. Chrome'a bir kez yüklemen gerekiyor (Chrome mağazasında değil, geliştirici modunda):</p>
+<ol>
+<li>Chrome'da adres çubuğuna <code>chrome://extensions</code> yaz.</li>
+<li>Sağ üstten <b>Geliştirici modu</b>nu aç.</li>
+<li><b>Paketlenmemiş öğe yükle</b>'ye bas.</li>
+<li>Şu klasörü seç:</li>
+</ol>
+<div class="row"><span class="path" id="extdir">…</span><button class="alt" id="copy">Yolu kopyala</button></div>
+<p>Eşleşme anahtarı uzantıya zaten gömülü; ayrıca bir şey girmene gerek yok. Yükledikten sonra bu kart yeşile döner.</p>
+</div></div>
+
+<div class="card" id="c3"><h2><span class="n">3</span>WhatsApp Web <span class="dot" id="d3"></span></h2>
+<p>Uzantı bağlandıktan sonra WhatsApp Web'i aç (ya da sayfayı yenile). Sağ altta küçük bir <b>Barney</b> paneli çıkar; ona basınca açılır.</p>
+<div class="row"><a class="btn" href="https://web.whatsapp.com/" target="_blank" rel="noopener">WhatsApp Web'i aç</a></div>
+<p>Panelde <b>Şimdi öner</b> ile ilk denemeyi yapabilirsin; hiçbir şey kendiliğinden gönderilmez.</p></div>
+
+<div class="card"><h2><span class="n">4</span>Stil kartı <span class="dot" id="d4"></span></h2>
+<div id="prof-ok" hidden><div class="kv"><span>Kişi</span><span id="p-owner"></span><span>Mesaj</span><span id="p-n"></span><span>Güven</span><span id="p-conf"></span></div>
+<p id="p-warn" class="warn-t" hidden>Kart az mesajdan çıktı; otomatik gönderim kapalı kalır, yalnız öneri gelir. En az ~300 mesaj önerilir.</p></div>
+<div id="prof-todo"><p class="bad-t">Stil kartı yok: Barney senin gibi yazamaz.</p>
+<ol><li>WhatsApp'ta bir sohbeti aç → ⋮ → <b>Dışa aktar</b> → <b>Medyasız</b>. (Ne kadar çok sohbet o kadar iyi.)</li>
+<li>Dosyayı bilgisayara al, sunucuyu şöyle yeniden başlat:</li></ol>
+<div class="row"><span class="path">barney serve --profile "WhatsApp Chat - X.txt" --owner "Adın"</span></div></div></div>
+
+<div class="card"><h2><span class="n">5</span>Mod ve kontrol <span class="dot" id="d5"></span></h2>
+<div class="kv"><span>Durum</span><span id="m-state"></span><span>Mod</span><span id="m-mode"></span><span>İzlenen sohbetler</span><span id="m-allow"></span>
+<span>Model</span><span id="m-model"></span><span>Bugün yapay zekâ çağrısı</span><span id="m-calls"></span><span>Son saatte gönderilen</span><span id="m-sent"></span></div>
+<div class="row"><button id="toggle" class="stop">Durdur</button></div>
+<p id="m-keywarn" class="bad-t" hidden></p></div>
+
+<div class="card"><h2><span class="n">6</span>Model anahtarı <span class="dot" id="d6"></span></h2>
+<p>Cevap üretmek için bir sağlayıcının API anahtarı gerekir. Anahtar yalnızca bu bilgisayarda (<code>~/.config/barney/settings.json</code>, sadece sen okuyabilirsin) saklanır ve sayfaya geri gösterilmez. <b>Dikkat:</b> cevap üretilirken sohbet metni seçtiğin sağlayıcıya gönderilir (telefon/e-posta gibi bilgiler maskelenir).</p>
+<div class="row"><select id="k-prov"></select><input id="k-key" type="password" autocomplete="off" placeholder="API anahtarı (sk-…)" style="flex:1;min-width:200px"><button id="k-save">Kaydet</button><button id="k-clear" class="alt">Anahtarı sil</button></div>
+<p id="k-msg"></p></div>
+
+<div class="foot">İzleme yapay zekâsızdır; yapay zekâ yalnızca izlenen bir sohbete yeni mesaj gelince çalışır. Gönderilen her mesaj <code>sent.jsonl</code> günlüğüne yazılır.</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const dot=(id,s)=>{$(id).className='dot '+(s||'')};
+let paused=false;
+async function load(){
+  let r; try{ r=await fetch('/api/setup',{credentials:'same-origin'}); }catch(e){ return }
+  if(r.status===401){ document.querySelector('.wrap').innerHTML='<h1>Barney</h1><div class="card"><p>Bu sayfayı açmak için terminalde <code>barney serve</code>in yazdığı <b>kurulum bağlantısını</b> kullan.</p></div>'; clearInterval(timer); return }
+  const d=await r.json(), info=d.info||{}, st=d.stats||{};
+  $('extdir').textContent=info.ext_dir||'';
+  $('ext-ok').hidden=!d.connected; $('ext-todo').hidden=d.connected; dot('d2',d.connected?'ok':'');
+  dot('d3',d.connected?'warn':'');
+  const p=info.profile; $('prof-ok').hidden=!p; $('prof-todo').hidden=!!p; dot('d4',p?(p.confidence==='düşük'?'warn':'ok'):'');
+  if(p){$('p-owner').textContent=p.owner;$('p-n').textContent=p.messages+' metin mesajı';$('p-conf').textContent=p.confidence;$('p-warn').hidden=p.confidence!=='düşük'}
+  paused=st.paused;
+  $('m-state').textContent=paused?'DURDURULDU':'Çalışıyor'; $('m-state').className=paused?'bad-t':'ok-t';
+  $('m-mode').textContent=st.auto_send?'Otomatik gönderim (izinli sohbetlerde)':'Yalnız öneri (kendiliğinden gönderme yok)';
+  $('m-allow').textContent=(info.allow&&info.allow.length)?info.allow.join(', '):'hiçbiri (yalnız "Şimdi öner")';
+  $('m-model').textContent=info.provider+(info.council?' · konsey':' · tek çağrı');
+  $('m-calls').textContent=st.calls_today; $('m-sent').textContent=st.sent_last_hour;
+  $('toggle').textContent=paused?'Sürdür':'Durdur'; $('toggle').className=paused?'':'stop';
+  dot('d5',paused?'warn':'ok');
+  const sel=$('k-prov'); if(!sel.options.length&&info.providers){info.providers.forEach(x=>sel.add(new Option(x,x)));sel.value=info.provider}
+  dot('d6',info.key_set?'ok':'');
+  const kw=$('m-keywarn'); kw.hidden=!!info.key_set; if(!info.key_set) kw.textContent='API anahtarı yok: cevap üretilemez. Aşağıdaki 6. karttan gir.';
+}
+$('copy').onclick=async()=>{try{await navigator.clipboard.writeText($('extdir').textContent);$('copy').textContent='Kopyalandı ✓'}catch{$('copy').textContent='Elle seç'};setTimeout(()=>$('copy').textContent='Yolu kopyala',1800)};
+$('toggle').onclick=async()=>{await fetch(paused?'/api/resume':'/api/pause',{method:'POST',credentials:'same-origin',headers:{'X-Barney':'1'}});load()};
+async function saveKey(clear){
+  const key=clear?'':$('k-key').value.trim();
+  if(!clear&&!key){$('k-msg').textContent='Önce anahtarı yapıştır.';$('k-msg').className='bad-t';return}
+  const r=await fetch('/api/settings',{method:'POST',credentials:'same-origin',headers:{'X-Barney':'1','Content-Type':'application/json'},body:JSON.stringify({provider:$('k-prov').value,key})});
+  if(r.ok){$('k-key').value='';$('k-msg').textContent=clear?'Anahtar silindi.':'Kaydedildi ✓ (anahtar sayfada gösterilmez).';$('k-msg').className='ok-t';load()}
+  else{$('k-msg').textContent=(await r.text()).trim()||'Kaydedilemedi';$('k-msg').className='bad-t'}
+}
+$('k-save').onclick=()=>saveKey(false); $('k-clear').onclick=()=>saveKey(true);
+load(); const timer=setInterval(load,2000);
+</script></body></html>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="Barney mimarisi">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5B7CFF"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#E8C547"/></marker>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#182248"/><stop offset="1" stop-color="#121A3A"/></linearGradient>
+    <style>.t{font-family:Inter,"Segoe UI",system-ui,sans-serif}.h{font-size:17px;font-weight:700;fill:#E6EAF7}.s{font-size:13px;fill:#AEB7DC}.k{font-size:12px;fill:#8D97C4}</style>
+  </defs>
+  <rect width="1200" height="560" rx="20" fill="#0B1026"/>
+  <g class="t">
+    <!-- Chrome -->
+    <rect x="24" y="40" width="300" height="480" rx="18" fill="none" stroke="#2A3A86" stroke-dasharray="7 6"/>
+    <text x="44" y="68" class="k" font-weight="700">TARAYICI · Chrome</text>
+    <g transform="translate(48 90)"><rect width="252" height="120" rx="14" fill="url(#box)" stroke="#2A3A86"/>
+      <text x="18" y="30" class="h">WhatsApp Web</text>
+      <text x="18" y="56" class="s">açık sohbet · sol liste</text>
+      <text x="18" y="76" class="s">mesaj kutusu · gönder düğmesi</text>
+      <rect x="18" y="88" width="216" height="20" rx="10" fill="#0B1026" stroke="#1F2A5C"/><text x="126" y="102" text-anchor="middle" class="k">kullanıcının kendi oturumu</text></g>
+    <g transform="translate(48 232)"><rect width="252" height="170" rx="14" fill="url(#box)" stroke="#5B7CFF"/>
+      <text x="18" y="30" class="h">Barney uzantısı (MV3)</text>
+      <text x="18" y="56" class="s">• olay tabanlı izleme (yapay zekâsız)</text>
+      <text x="18" y="76" class="s">• geçmişi kaydırıp okuma</text>
+      <text x="18" y="96" class="s">• sohbet açma · taslak yazma</text>
+      <text x="18" y="116" class="s">• güvenli gönderim kapısı</text>
+      <text x="18" y="146" class="k">footer / ses / ek: AI için yasak</text></g>
+    <g transform="translate(48 424)"><rect width="252" height="76" rx="14" fill="url(#box)" stroke="#2A3A86"/>
+      <text x="18" y="30" class="h">Yan panel</text><text x="18" y="54" class="s">arayüz, iframe (embed)</text></g>
+
+    <!-- Sunucu -->
+    <rect x="410" y="40" width="470" height="480" rx="18" fill="none" stroke="#5B7CFF" stroke-opacity=".7"/>
+    <text x="430" y="68" class="k" font-weight="700">BARNEY SUNUCUSU · Go · yalnız 127.0.0.1</text>
+    <g transform="translate(434 90)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">Gözcü</text><text x="16" y="52" class="s">izin · sakinleşme · sınır</text><text x="16" y="72" class="s">kişi bazlı koruma kuralları</text></g>
+    <g transform="translate(654 90)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">Konsey / Cevap</text><text x="16" y="52" class="s">tek çağrı ya da 3 persona</text><text x="16" y="72" class="s">+ Vicdan veto · stil denetimi</text></g>
+    <g transform="translate(434 204)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">Stil kartı</text><text x="16" y="52" class="s">patlama · uzunluk · imla</text><text x="16" y="72" class="s">emoji · gecikme (LLM'siz)</text></g>
+    <g transform="translate(654 204)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">Kişiler &amp; hafıza</text><text x="16" y="52" class="s">geçmiş · notlar · aşama</text><text x="16" y="72" class="s">düzeltmelerden öğrenme</text></g>
+    <g transform="translate(434 318)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">Okuma işleri</text><text x="16" y="52" class="s">tek · toplu · senkronize</text><text x="16" y="72" class="s">yavaş &amp; insan gibi hız</text></g>
+    <g transform="translate(654 318)">
+      <rect width="206" height="96" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="16" y="28" class="h">AI tarayıcı ajanı</text><text x="16" y="52" class="s">beyaz listeli eylemler</text><text x="16" y="72" class="s">mesaj yazamaz / gönderemez</text></g>
+    <g transform="translate(434 432)">
+      <rect width="426" height="68" rx="12" fill="#0B1026" stroke="#1F2A5C"/><text x="16" y="28" class="h">REST + SSE + WebSocket</text><text x="16" y="50" class="s">Bearer anahtar · Host/Origin denetimi · CSP · çerez yok</text></g>
+
+    <!-- sağ -->
+    <rect x="976" y="40" width="200" height="200" rx="18" fill="none" stroke="#2A3A86" stroke-dasharray="7 6"/>
+    <text x="996" y="68" class="k" font-weight="700">ARAYÜZ</text>
+    <g transform="translate(996 84)"><rect width="160" height="136" rx="12" fill="url(#box)" stroke="#5B7CFF"/><text x="14" y="28" class="h">Web arayüzü</text><text x="14" y="52" class="s">React · Vite</text><text x="14" y="72" class="s">sohbet · canlı · analiz</text><text x="14" y="92" class="s">hafıza · geçmiş</text><text x="14" y="112" class="k">ikiliye gömülü</text></g>
+    <rect x="976" y="270" width="200" height="120" rx="18" fill="none" stroke="#E8C547" stroke-opacity=".6" stroke-dasharray="7 6"/>
+    <text x="996" y="298" class="k" font-weight="700">YEREL DİSK</text>
+    <g transform="translate(996 312)"><rect width="160" height="64" rx="12" fill="url(#box)" stroke="#E8C547" stroke-opacity=".5"/><text x="14" y="28" class="h">~/.config/barney</text><text x="14" y="48" class="s">0600 izinli dosyalar</text></g>
+    <rect x="976" y="420" width="200" height="100" rx="18" fill="none" stroke="#2A3A86" stroke-dasharray="7 6"/>
+    <text x="996" y="448" class="k" font-weight="700">MODEL (isteğe bağlı)</text>
+    <g transform="translate(996 460)"><rect width="160" height="44" rx="12" fill="url(#box)" stroke="#2A3A86"/><text x="14" y="20" class="s">DeepSeek · Anthropic</text><text x="14" y="36" class="s">OpenAI</text></g>
+  </g>
+  <g stroke="#5B7CFF" stroke-width="2.5" fill="none">
+    <path d="M300 150 H340 V292 H300" marker-end="url(#a)" opacity=".0"/>
+    <path d="M174 212 V230" marker-start="url(#a)" marker-end="url(#a)"/>
+    <path d="M300 317 H410" marker-start="url(#a)" marker-end="url(#a)"/>
+    <path d="M880 150 H976" marker-start="url(#a)" marker-end="url(#a)"/>
+  </g>
+  <path d="M880 342 H976" stroke="#E8C547" stroke-width="2.5" fill="none" marker-end="url(#g)"/>
+  <path d="M880 470 H976" stroke="#8D97C4" stroke-width="2" stroke-dasharray="5 5" fill="none" marker-end="url(#a)"/>
+  <text x="326" y="306" class="t k" text-anchor="middle">WS</text>
+  <text x="928" y="140" class="t k" text-anchor="middle">REST</text>
+</svg>

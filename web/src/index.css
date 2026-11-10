@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --color-surface: var(--surface);
+    --color-raised: var(--raised);
+    --color-gold: var(--gold);
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Barney: gece mavisi, tek (koyu) tema. */
+:root {
+    --background: #0b1026;
+    --surface: #121a3a;
+    --raised: #182248;
+    --foreground: #e6eaf7;
+    --card: #121a3a;
+    --card-foreground: #e6eaf7;
+    --popover: #182248;
+    --popover-foreground: #e6eaf7;
+    --primary: #5b7cff;
+    --primary-foreground: #ffffff;
+    --secondary: #182248;
+    --secondary-foreground: #e6eaf7;
+    --muted: #182248;
+    --muted-foreground: #8d97c4;
+    --accent: #1b2755;
+    --accent-foreground: #e6eaf7;
+    --destructive: #ff6b7a;
+    --success: #4ade80;
+    --warning: #f5b94a;
+    --gold: #e8c547;
+    --border: #1f2a5c;
+    --input: #26346f;
+    --ring: #5b7cff;
+    --radius: 0.625rem;
+    color-scheme: dark;
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { @apply font-sans; background: var(--background); }
+  body { @apply bg-background text-foreground; margin: 0; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]) { cursor: pointer; }
+}
+
+@keyframes barney-pulse {
+  0%, 100% { opacity: 0.35; transform: scale(0.82); }
+  50% { opacity: 1; transform: scale(1.12); }
+}
+.dot-pulse { animation: barney-pulse 900ms ease-in-out infinite; }
+@keyframes barney-rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: barney-rise 220ms cubic-bezier(0.2, 0, 0, 1) both; }
+@media (prefers-reduced-motion: reduce) { .dot-pulse, .rise { animation: none; } }
+
+* { scrollbar-width: thin; scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent; }
+
+/* Kaydırıcı (input[type=range]) */
+input[type="range"].bslider { -webkit-appearance: none; appearance: none; height: 6px; border-radius: 999px; background: linear-gradient(to right, var(--primary) var(--pct, 0%), var(--border) var(--pct, 0%)); outline: none; width: 100%; }
+input[type="range"].bslider::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 999px; background: var(--foreground); border: 2px solid var(--primary); }
+input[type="range"].bslider::-moz-range-thumb { width: 14px; height: 14px; border-radius: 999px; background: var(--foreground); border: 2px solid var(--primary); }
+input[type="range"].bslider:focus-visible { box-shadow: 0 0 0 3px color-mix(in oklab, var(--ring) 40%, transparent); }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

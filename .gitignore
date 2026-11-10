@@ -1,0 +1,15 @@
+# derleme çıktıları
+/bin/
+/web/node_modules/
+/web/dist/*
+!/web/dist/.gitkeep
+*.log
+.DS_Store
+
+# yerel veri: kişiler, sohbet geçmişi, anahtarlar, eşleşme gizli anahtarı
+/.barney/
+settings.json
+pairing.json
+sent.jsonl
+*.zip
+/barney

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Otomatik gönderim korumaları">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5B7CFF"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#F5B94A"/></marker>
+    <style>.t{font-family:Inter,"Segoe UI",system-ui,sans-serif}.h{font-size:15px;font-weight:700;fill:#E6EAF7}.s{font-size:12px;fill:#AEB7DC}</style>
+  </defs>
+  <rect width="1200" height="380" rx="20" fill="#0B1026"/>
+  <g class="t">
+    <text x="40" y="46" font-size="20" font-weight="700" fill="#E8C547">Gönderim kapısı — hepsi geçmeden hiçbir şey kendiliğinden gitmez</text>
+    <g font-size="13">
+      <g transform="translate(40 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">1 · İzlenen kişi</text><text x="14" y="50" class="s">kayıtlı + "izle" açık</text><text x="14" y="68" class="s">değilse: yapay zekâ yok</text></g>
+      <g transform="translate(212 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">2 · Yeni mesaj</text><text x="14" y="50" class="s">tekrarsız · 8 sn sakin</text><text x="14" y="68" class="s">"ok/👍" atlanır</text></g>
+      <g transform="translate(384 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">3 · Güvenilir aday</text><text x="14" y="50" class="s">stil kuralları kodla</text><text x="14" y="68" class="s">denetimden geçti</text></g>
+      <g transform="translate(556 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">4 · Hassas değil</text><text x="14" y="50" class="s">para · sağlık · buluşma</text><text x="14" y="68" class="s">kavga · ayrılık → sorar</text></g>
+      <g transform="translate(728 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">5 · Sessiz saat dışı</text><text x="14" y="50" class="s">ör. 01:00–08:00 arası</text><text x="14" y="68" class="s">bekletir</text></g>
+      <g transform="translate(900 78)"><rect width="150" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">6 · İlk N onay</text><text x="14" y="50" class="s">ilk 3 cevabı sen</text><text x="14" y="68" class="s">onaylarsın</text></g>
+      <g transform="translate(1072 78)"><rect width="100" height="84" rx="12" fill="#121A3A" stroke="#2A3A86"/><text x="14" y="28" class="h">7 · Sınır</text><text x="14" y="50" class="s">saatlik</text><text x="14" y="68" class="s">günlük</text></g>
+    </g>
+    <g stroke="#5B7CFF" stroke-width="2.5" fill="none" marker-end="url(#a)">
+      <path d="M190 120 H208"/><path d="M362 120 H380"/><path d="M534 120 H552"/><path d="M706 120 H724"/><path d="M878 120 H896"/><path d="M1050 120 H1068"/>
+    </g>
+    <g stroke="#F5B94A" stroke-width="2" fill="none" stroke-dasharray="5 5" marker-end="url(#r)">
+      <path d="M631 162 V222"/><path d="M803 162 V222"/><path d="M975 162 V222"/><path d="M459 162 V222"/>
+    </g>
+    <rect x="380" y="224" width="676" height="54" rx="14" fill="#2A2410" stroke="#F5B94A" stroke-opacity=".7"/>
+    <text x="718" y="248" text-anchor="middle" font-size="15" font-weight="700" fill="#F5B94A">Onay bekler — cevap "öneri" olarak kalır, sen Gönder'e basarsın</text>
+    <text x="718" y="268" text-anchor="middle" font-size="12" fill="#D8C48E">Her koruma kişi bazında Ayarlar'dan değişir · otomatik gönderim varsayılan olarak KAPALI</text>
+    <rect x="40" y="304" width="1132" height="52" rx="14" fill="#10331F" stroke="#4ADE80" stroke-opacity=".6"/>
+    <text x="606" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="#4ADE80">Gönder → uzantı son kez kontrol eder: sohbet değişti mi? yeni mesaj geldi mi? kutuda taslak var mı?</text>
+    <text x="606" y="346" text-anchor="middle" font-size="12" fill="#9AD9B3">Ses düğmesi ile gönder düğmesi aynı yerde: kutu boşken asla tıklanmaz · her gönderim sent.jsonl'a yazılır · ■ ile anında dur</text>
+  </g>
+</svg>

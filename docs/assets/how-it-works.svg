@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Nasıl çalışır: oku, öğren, öner, gönder">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5B7CFF"/></marker>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#182248"/><stop offset="1" stop-color="#121A3A"/></linearGradient>
+    <style>.t{font-family:Inter,"Segoe UI",system-ui,sans-serif}</style>
+  </defs>
+  <rect width="1200" height="300" rx="20" fill="#0B1026"/>
+  <g class="t">
+    <g transform="translate(36 40)">
+      <rect width="240" height="220" rx="18" fill="url(#card)" stroke="#2A3A86"/>
+      <circle cx="42" cy="46" r="24" fill="#5B7CFF" opacity=".18"/><text x="42" y="54" text-anchor="middle" font-size="24" font-weight="800" fill="#9DB0FF">1</text>
+      <text x="80" y="54" font-size="24" font-weight="700" fill="#E6EAF7">Oku</text>
+      <text x="24" y="98" font-size="15" fill="#AEB7DC">Uzantı açık WhatsApp</text>
+      <text x="24" y="120" font-size="15" fill="#AEB7DC">sohbetini kaydırıp geçmişi</text>
+      <text x="24" y="142" font-size="15" fill="#AEB7DC">okur. Zip gerekmez.</text>
+      <rect x="24" y="166" width="192" height="30" rx="15" fill="#0B1026" stroke="#1F2A5C"/><text x="120" y="186" text-anchor="middle" font-size="13" fill="#E8C547">500 · 3000 · tüm geçmiş</text>
+    </g>
+    <g transform="translate(318 40)">
+      <rect width="240" height="220" rx="18" fill="url(#card)" stroke="#2A3A86"/>
+      <circle cx="42" cy="46" r="24" fill="#5B7CFF" opacity=".18"/><text x="42" y="54" text-anchor="middle" font-size="24" font-weight="800" fill="#9DB0FF">2</text>
+      <text x="80" y="54" font-size="24" font-weight="700" fill="#E6EAF7">Öğren</text>
+      <text x="24" y="98" font-size="15" fill="#AEB7DC">Yapay zekâsız, kodla:</text>
+      <text x="24" y="120" font-size="15" fill="#AEB7DC">kaç mesaj arka arkaya,</text>
+      <text x="24" y="142" font-size="15" fill="#AEB7DC">uzunluk, imla, emoji, hız.</text>
+      <rect x="24" y="166" width="192" height="30" rx="15" fill="#0B1026" stroke="#1F2A5C"/><text x="120" y="186" text-anchor="middle" font-size="13" fill="#E8C547">stil kartı</text>
+    </g>
+    <g transform="translate(600 40)">
+      <rect width="240" height="220" rx="18" fill="url(#card)" stroke="#2A3A86"/>
+      <circle cx="42" cy="46" r="24" fill="#5B7CFF" opacity=".18"/><text x="42" y="54" text-anchor="middle" font-size="24" font-weight="800" fill="#9DB0FF">3</text>
+      <text x="80" y="54" font-size="24" font-weight="700" fill="#E6EAF7">Öner</text>
+      <text x="24" y="98" font-size="15" fill="#AEB7DC">Tek çağrı ya da konsey:</text>
+      <text x="24" y="120" font-size="15" fill="#AEB7DC">güvenli · komik · cesur.</text>
+      <text x="24" y="142" font-size="15" fill="#AEB7DC">Biçimi kod denetler.</text>
+      <rect x="24" y="166" width="192" height="30" rx="15" fill="#0B1026" stroke="#1F2A5C"/><text x="120" y="186" text-anchor="middle" font-size="13" fill="#E8C547">ton: 4 kaydırıcı</text>
+    </g>
+    <g transform="translate(882 40)">
+      <rect width="282" height="220" rx="18" fill="url(#card)" stroke="#E8C547" stroke-opacity=".55"/>
+      <circle cx="42" cy="46" r="24" fill="#E8C547" opacity=".18"/><text x="42" y="54" text-anchor="middle" font-size="24" font-weight="800" fill="#E8C547">4</text>
+      <text x="80" y="54" font-size="24" font-weight="700" fill="#E6EAF7">Gönder</text>
+      <text x="24" y="98" font-size="15" fill="#AEB7DC">Tek tıkla ya da kişi başına</text>
+      <text x="24" y="120" font-size="15" fill="#AEB7DC">otomatik — korumalarla.</text>
+      <text x="24" y="142" font-size="15" fill="#AEB7DC">Varsayılan: kapalı.</text>
+      <rect x="24" y="166" width="234" height="30" rx="15" fill="#0B1026" stroke="#1F2A5C"/><text x="141" y="186" text-anchor="middle" font-size="13" fill="#4ADE80">insan gibi bekleme + yazma</text>
+    </g>
+  </g>
+  <g stroke="#5B7CFF" stroke-width="3" fill="none" marker-end="url(#ar)" stroke-dasharray="6 6">
+    <path d="M280 150 H312"/><path d="M562 150 H594"/><path d="M844 150 H876"/>
+  </g>
+</svg>

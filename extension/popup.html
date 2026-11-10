@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><title>Barney</title>
+<style>
+  :root{--bg:#0B1026;--surface:#121A3A;--line:#1F2A5C;--primary:#5B7CFF;--gold:#E8C547;--text:#E6EAF7;--mut:#8D97C4;--bad:#FF6B7A;--ok:#4ADE80}
+  body{margin:0;width:300px;background:var(--bg);color:var(--text);font:13px system-ui,sans-serif;padding:14px}
+  h1{font-size:16px;margin:0 0 2px}h1 b{color:var(--gold)}
+  .sub{color:var(--mut);margin-bottom:12px}
+  .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--line)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--bad)}
+  .dot.on{background:var(--ok)}
+  button{background:var(--primary);color:#fff;border:0;border-radius:8px;padding:8px 10px;cursor:pointer;font:inherit;margin-top:10px;width:100%}
+  button.stop{background:var(--bad)} button.alt{background:var(--surface);border:1px solid var(--line)}
+  input{width:100%;box-sizing:border-box;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px;margin-top:4px}
+  label{display:block;margin-top:8px;color:var(--mut)} .err{color:var(--bad);margin-top:8px}
+</style></head><body>
+<h1>Barney</h1>
+<div class="sub">WhatsApp Web gözcüsü</div>
+<div class="row"><span><span id="dot" class="dot"></span><span id="conn">Bağlı değil</span></span><span id="mode"></span></div>
+<div class="row"><span>Bugün yapay zekâ çağrısı</span><span id="calls">0</span></div>
+<div class="row"><span>Son saatte otomatik gönderim</span><span id="sent">0</span></div>
+<div id="err" class="err"></div>
+<button id="openpanel">Arayüzü yan panelde aç</button>
+<button id="opentab" class="alt">Arayüzü sekmede aç</button>
+<button id="showpanel" class="alt">Sayfa içi paneli göster</button>
+<button id="toggle" class="stop">Durdur</button>
+<button id="reconnect" class="alt">Yeniden bağlan</button>
+<label>Sunucu adresi<input id="baseUrl" placeholder="http://127.0.0.1:8777"></label>
+<label>Eşleşme anahtarı<input id="key" type="password" autocomplete="off"></label>
+<button id="save" class="alt">Kaydet</button>
+<script src="popup.js" type="module"></script>
+</body></html>
